@@ -22,11 +22,11 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laxmiprasannachukka/social_media_app_frontend.git"
+    "url": "git+https://github.com/laxmiprasannachukka/social_app_backend.git"
   },
   "bugs": {
-    "url": "https://github.com/laxmiprasannachukka/social_media_app_frontend/issues"
+    "url": "https://github.com/laxmiprasannachukka/social_app_backend/issues"
   },
-  "homepage": "https://github.com/laxmiprasannachukka/social_media_app_frontend#readme",
+  "homepage": "https://github.com/laxmiprasannachukka/social_app_backend#readme",
   "description": ""
 }
