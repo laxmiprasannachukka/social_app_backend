@@ -30,6 +30,11 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
 
+
+app.use("/Rest_API/auth", authRoute);
+app.use("/Rest_API/users", userRoute);
+app.use("/Rest_API/posts", postRoute);
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "public/images");
@@ -48,9 +53,7 @@ app.post("/Rest_API/upload", upload.single("file"), (req, res) => {
   }
 });
 
-app.use("/Rest_API/auth", authRoute);
-app.use("/Rest_API/users", userRoute);
-app.use("/Rest_API/posts", postRoute);
+
 
 
 app.listen(process.env.PORT || 5000, () => {
